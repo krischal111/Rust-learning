@@ -5,7 +5,7 @@ use termion::{color, style};
 use std::cmp::Ordering;
 
 fn main() {
-    print!("\n Guess a number from 0 to 9999: {}",color::Fg(color::Blue));
+    print!("\nGuess a number from 0 to 9999: {}",color::Fg(color::Blue));
     io::stdout().flush().unwrap();
 
     let secret_number = rand::thread_rng().gen_range(1..10000);
