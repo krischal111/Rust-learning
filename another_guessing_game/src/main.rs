@@ -23,7 +23,6 @@ fn main()
             .expect("Error reading line");
         
         let guess:i16 = guess.trim().parse().expect("Please enter a number.");
-
         let g_digit:[u8;4] = [((guess/1000)%10) as u8,
                               ((guess/100)%10)  as u8,
                               ((guess/10)%10)   as u8,
@@ -49,10 +48,10 @@ fn main()
             correct &= same;
             if exists
             {
-                print!("{}",color::Fg(color::Yellow));
+                print!("{}{}",color::Bg(color::Rgb(0xffu8,0xffu8,00u8)),color::Fg(color::White));
                 if same
                 {
-                    print!("{}",color::Fg(color::Blue));
+                    print!("{}{}",color::Bg(color::Rgb(0x00u8,0xffu8,00u8)),color::Fg(color::White));
                 }
             }
             else
@@ -65,7 +64,7 @@ fn main()
 
         if correct
         {
-            println!("\n\n{}You guess was correct!{}", color::Fg(color::Yellow),style::Reset);
+            println!("{}\n\n{}You guess was correct!{}",style::Reset, color::Fg(color::Yellow),style::Reset);
             break;
         }
 

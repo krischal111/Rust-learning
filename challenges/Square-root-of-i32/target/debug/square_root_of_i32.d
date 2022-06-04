@@ -1,0 +1,1 @@
+/home/krischal/Programming/Learning-phases/Rust/challenges/Square-root-of-i32/target/debug/square_root_of_i32: /home/krischal/Programming/Learning-phases/Rust/challenges/Square-root-of-i32/src/main.rs
