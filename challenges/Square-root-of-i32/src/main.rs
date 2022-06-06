@@ -3,7 +3,7 @@ use std::io::Write;
 use std::{io, thread, time};
 
 fn delay() {
-    let delay_time = time::Duration::from_millis(100);
+    let delay_time = time::Duration::from_millis(500);
     thread::sleep(delay_time);
 }
 enum Comparison {
@@ -39,16 +39,16 @@ impl Solution {
                 Comparison::Greater => b = avg,
                 Comparison::Equal => break avg.try_into().unwrap(),
             }
+            avg = (a + b) / 2;
             // print!("\nBetween [{a}, {b}] checking {avg} * {avg} = {} for root of {x}", avg * avg);
             // io::stdout().flush().unwrap();
             // delay();
-            avg = (a + b) / 2;
         };
     }
 }
 
 fn main() {
-    let n = 2147395599;
+    let n = 625;
     print!("The square root of {n} is ");
     io::stdout().flush().unwrap();
     let sqrt = Solution::my_sqrt(n);
