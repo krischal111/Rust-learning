@@ -1,1 +1,0 @@
-/home/krischal/Programming/Learning-phases/Rust/challenges/median-of-two-sorted-arrays/target/debug/median_of_two_sorted_arrays: /home/krischal/Programming/Learning-phases/Rust/challenges/median-of-two-sorted-arrays/src/lib.rs /home/krischal/Programming/Learning-phases/Rust/challenges/median-of-two-sorted-arrays/src/main.rs
